@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ADD8E6;
+        }
+
+        #semaphore {
+            display: flex;
+            background-color: black;
+            border-radius: 25%;
+            height: 800px;
+            width: 400px;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .led {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .stop {
+            background-color: red;
+            border: 5px solid gray;
+        }
+
+        .warning {
+            background-color: #fdfd96;
+            border: 5px solid gray;
+        }
+
+        .go {
+            background-color: #BDECB6;
+            border: 5px solid gray;
+        }
+
+        .message {
+            margin-left: 10px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        #warning {
+            display: none;
+        }
+
+        #go {
+            display: none;
+        }
+
+        @media (max-width: 800px) {
+            .stop {
+                background-color: #FF6961;
+            }
+
+            .warning {
+                background-color: yellow;
+            }
+
+            .go {
+                background-color: #BDECB6;
+            }
+
+            #stop {
+                display: none;
+            }
+
+            #warning {
+                display: block;
+            }
+
+            #go {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .stop {
+                background-color: #FF6961;
+            }
+
+            .warning {
+                background-color: #fdfd96;
+            }
+
+            .go {
+                background-color: green;
+            }
+
+            #stop {
+                display: none;
+            }
+
+            #warning {
+                display: none;
+            }
+
+            #go {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="semaphore">
+        <div class="led stop"></div>
+        <div class="led warning"></div>
+        <div class="led go"></div>
+    </div>
+
+    <a class="message" id="stop">PARAAAA!!</a>
+    <a class="message" id="warning">CORRE QUE VAI FECHAR!!</a>
+    <a class="message" id="go">SÓ VAI!!</a>
+
+</body>
+
+</html>

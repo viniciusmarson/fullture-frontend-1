@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <style>
+        .descendentes p {
+            background-color: yellow;
+        }
+
+        .filhos > p {
+            background-color: yellow;
+        }
+
+        .irmaos-adjacentes p+p {
+            background-color: yellow;
+        }
+
+        .irmaos-em-geral p~p {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="descendentes">
+        <p>Decendente</p>
+    </div>
+
+    <br />
+
+    <div class="filhos">
+        <p>Filho</p>
+        <div>
+            <p>Filho do segundo filho</p>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="irmaos-adjacentes">
+        <p>Filho</p>
+        <p>Filho 2 - (Logo irmão adjacente ao de cima)</p>
+        <p>Filho 3 - (Logo irmão adjacente ao de cima)</p>
+    </div>
+
+    <br />
+
+    <div class="irmaos-adjacentes">
+        <p>Filho</p>
+        <a>Filho 2 - (Intrometido)</a>
+        <p>Filho 3 - (Logo irmão adjacente ao de cima)</p>
+        <p>Filho 4 - (Logo irmão adjacente ao de cima)</p>
+    </div>
+
+    <br />
+
+    <div class="irmaos-em-geral">
+        <p>Filho</p>
+        <a>Filho 2 - (Intrometido)</a>
+        <p>Filho 3 - (Logo irmão adjacente ao de cima)</p>
+        <p>Filho 4 - (Logo irmão adjacente ao de cima)</p>
+    </div>
+</body>
+
+</html>
